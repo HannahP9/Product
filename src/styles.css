@@ -1,0 +1,67 @@
+:root {
+  --background-dark: #1c1c1e;
+  --container-dark: #2c2c2e;
+  --box-shadow-dark: rgba(0, 0, 0, 0.5);
+  --primary-purple: #a569bd;
+  --accent-light: #f5f5dc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--accent-light);
+  font-family: Arial, sans-serif;
+  background-color: var(--background-dark);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--container-dark);
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--primary-purple);
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 3px solid var(--primary-purple);
+  border-radius: 50%;
+}
+
+.header a {
+  color: var(--accent-light);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: var(--primary-purple);
+}
+
+.footer {
+  background-color: var(--container-dark);
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid var(--primary-purple);
+}
+
+.footer p.small {
+  font-size: 0.85rem;
+  color: #ccc; /* lighter gray so it shows */
+}
+
+.socials a {
+  font-size: 1.3rem;
+  color: #f5f5dc;
+  margin: 0 8px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.socials a:hover {
+  color: #a569bd;
+  transform: scale(1.1);
+}

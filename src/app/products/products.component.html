@@ -1,0 +1,24 @@
+<div class="container my-5">
+  <h2 class="text-center mb-4">Adidas Clothing Products</h2>
+
+  <div class="row g-4">
+    <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let product of products">
+      <div class="card h-100 shadow-sm product-card">
+        
+        <img [src]="product.image" class="card-img-top" alt="{{ product.name }}" />
+
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ product.name }}</h5>
+          
+          <p class="card-text fw-bold">₱{{ product.price }}</p>
+          
+          <p class="text-muted small">{{ product.location }}</p>
+          
+          <a [routerLink]="['/products', product.id]" class="btn btn-primary btn-sm">
+            View Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
